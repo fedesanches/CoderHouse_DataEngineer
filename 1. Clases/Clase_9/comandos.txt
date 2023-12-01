@@ -1,0 +1,8 @@
+docker build -t img-clase9 .  -- sirve para crear la imagen, se pasa el nombre de la imagen y el directorio (".")
+
+docker run img-clase9 -- para crear el contenedor
+
+al "docker run" le podemos sumar
+    * --name "test" -- para asignarle al contenedor un nombre
+    * -d -- para que corrar en segundo plano
+    * -p puerto:puerto -- para asignar un puerto local y un puerto en el contenedor
